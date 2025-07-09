@@ -1,0 +1,14 @@
+.discover-button {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.discover-button:hover {
+  background-color: #1d3557;
+}
