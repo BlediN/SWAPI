@@ -84,9 +84,15 @@ const handleRemoveBan = (type, value) => {
   return (
     <div className="app">
       <h1>🌌 Stumble Upon Planets</h1>
-      <DiscoverButton onClick={handleDiscover} />
-      {planet && <PlanetCard planet={planet} onBan={handleBan} />}
-      <BanList bans={banned} onRemove={handleRemoveBan} />
+      <div className="left-panel">
+        <DiscoverButton onClick={handleDiscover} />
+      </div>
+      <div className="right-panel">
+        {planet && <PlanetCard planet={planet} onBan={handleBan} />}
+      </div>
+      <div className="footer-panel">
+        <BanList bans={banned} onRemove={handleRemoveBan} />
+      </div>
     </div>
   );
 }

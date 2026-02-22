@@ -1,34 +1,51 @@
 .ban-list {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #111827;
-  border-radius: 8px;
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(145deg, rgba(30, 30, 60, 0.8), rgba(20, 20, 40, 0.8));
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
   color: #f9fafb;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(239, 68, 68, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .ban-list h3 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-  color: #93c5fd;
+  margin: 0 0 0.8rem 0;
+  font-size: 1.1em;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.5px;
 }
 
 .ban-tag {
   display: inline-block;
-  margin: 6px 6px 0 0;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background-color: #2563eb;
+  margin: 0 8px 8px 0;
+  padding: 8px 16px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ban-tag:hover {
-  background-color: #1d4ed8;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.5);
 }
 
-.ban-tag::after {
-  content: " ✕";
-  font-weight: bold;
+.ban-tag:active {
+  transform: translateY(0);
 }
